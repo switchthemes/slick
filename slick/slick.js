@@ -1019,7 +1019,7 @@
             .off('focus.slick blur.slick')
             .on(
                 'focus.slick',
-                '*', 
+                '*',
                 function(event) {
                     var $sf = $(this);
 
@@ -1034,7 +1034,7 @@
                 }
             ).on(
                 'blur.slick',
-                '*', 
+                '*',
                 function(event) {
                     var $sf = $(this);
 
@@ -1370,7 +1370,7 @@
                     'aria-controls': 'slick-slide' + _.instanceUid + mappedSlideIndex,
                     'aria-label': (i + 1) + ' of ' + numDotGroups,
                     'aria-selected': null,
-                    'tabindex': '-1'
+                    'tabindex': '0'
                 });
 
             }).eq(_.currentSlide).find('button').attr({
